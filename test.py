@@ -1,6 +1,6 @@
 #!/bin/bash
 
-import itertools
+import itertools 
 
 def iter_primes():
      # an iterator of all numbers between 2 and +infinity
