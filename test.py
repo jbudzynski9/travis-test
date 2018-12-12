@@ -1,6 +1,6 @@
 #!/bin/bash
 
-import itertools
+import itertools 
 
 def iter_primes():
      # an iterator of all numbers between 2 and +infinity
@@ -18,5 +18,5 @@ def iter_primes():
 
 for p in iter_primes():
     if p > 1000:
-        break
+        break 
     print(p)
