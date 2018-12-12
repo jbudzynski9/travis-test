@@ -18,5 +18,5 @@ def iter_primes():
 
 for p in iter_primes():
     if p > 1000:
-        break
+        break 
     print(p)
