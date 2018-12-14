@@ -24,13 +24,10 @@ before_deploy:
   
 deploy:
   provider: releases
-  user: "jbudzynski9"
   api_key: 
     secure: "GCPp+reAIgfhkE7eDUAEu2Z2G4VVvi7pZ84Y5kxE9JRaJF4WijvlVFaBV1O4f9svKH/OkcnzFrTPBqpWHD0vIdDNPrl+3CjIQZrfaSHRUSJR7cnRFnsgCR0OUfyJ01WOFSwN5WJC0eEzIYl+qj7x9OIgG1kuaKMMgSRC+iHejNP8BeiIjh0yqQXfJ0gQ6yFpqgUcfrpSZXnc+uc0Frz7bCM3rXupRUC0eVDATrSGu6g/BzQAKWdVLuhxt1CWVi4zbDMgIgVWQlLkFejIol6d+xZM5ssuxyB5NSoymTMwW3V5vnQPfdxug85tNLxjnltVheMnMLgNkM5FjPsE/67KC3TBXlZVf25NBWm3S6dYJPFJz4BhjhG3eTc550ib1jH98yB3yQY/Sbf66ZvpfURSIQkQdajrx66x6+zcJEJlhDBzbzdpD8LsyBlCuhQz2iY3lFTGpu2Vemqd5s7gV+vJnvwoeVJe1xU0tsRg9ep9C3uwMsqWj1AnQyi+YBJHK4Zinlga5Ya9Gr096Avyfl+9qGhOfmrZDqiZC65Hp4rhQfKnY48lSEkKE8T6uOYQ/NCdSWzeovJZ2C15pa+jfjEnLR+b565KOUIyp/zjO0GCnEWDgKnaRTIcjKwDzGKIExrR5eYm/PhJjkjNEUTZYgDhnHnEuN1FLx+NcDSNlN6YX+4="
   file: test.py
   skip_cleanup: true
   on:
-    repo: jbudzynski9/travis-test
     tags: false
-    all_branches: true
 
