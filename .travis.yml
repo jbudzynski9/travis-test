@@ -29,4 +29,5 @@ deploy:
   skip_cleanup: true
   on:
     repo: jbudzynski9/travis-test
+    all_branches: true
     tags: true
