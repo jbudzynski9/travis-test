@@ -19,7 +19,7 @@ before_deploy:
       # Set up git user name and tag this commit
       - git config --local user.name "jbudzynski9"
       - git config --local user.email "jbudzynski95@gmail.com"
-      - export TRAVIS_TOKEN=9izrpT84Y4jRtphxpzKUxQ
+      - export TRAVIS_TOKEN=9eb4f8e17ffcbb28be3c7de0a767355e605ee84e
       - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
       - git tag $TRAVIS_TAG
   
