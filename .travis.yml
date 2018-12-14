@@ -5,6 +5,13 @@ python:
 script:
   - python test.py
   
+before_deploy:
+      # Set up git user name and tag this commit
+      - git config --local user.name "jbudzynski9"
+      - git config --local user.email "jbudzynski95@gmail.com"
+      - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+      - git tag $TRAVIS_TAG
+  
 deploy:
   provider: releases
   api_key: travis-token
