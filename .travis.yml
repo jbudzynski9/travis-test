@@ -19,8 +19,9 @@ before_deploy:
   
 deploy:
   provider: releases
-  api_key: travis-token
+  api_key: "9eb4f8e17ffcbb28be3c7de0a767355e605ee84e"
   file: test.py
   skip_cleanup: true
   on:
+    repo: jbudzynski9/travis-test
     tags: true
