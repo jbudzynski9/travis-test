@@ -24,7 +24,7 @@ before_deploy:
   
 deploy:
   provider: releases
-  api_key: $TRAVIS_TOKEN
+  api_key: "$TRAVIS_TOKEN"
   file: test.py
   skip_cleanup: true
   on:
