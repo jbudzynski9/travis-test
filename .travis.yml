@@ -9,6 +9,9 @@ os:
   - ubuntu
   - centos
   
+cache: pip
+install: "pip install -r requirements.txt"
+  
 script:
   - python test.py
   
@@ -26,4 +29,9 @@ deploy:
   skip_cleanup: true
   on:
     repo: jbudzynski9/travis-test
+<<<<<<< HEAD
     tags: false
+=======
+    all_branches: true
+    tags: true
+>>>>>>> 00f94d519dff34ec1501ff57bda7e3f60c53877d
