@@ -3,10 +3,6 @@ python:
   - "2.7"
   - "2.6"
   
-OS: 
-  - ubuntu
-  - centos
-  
 script:
   - python test.py
   
