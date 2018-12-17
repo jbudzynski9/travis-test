@@ -14,12 +14,12 @@ cache: pip
 install: 
   "pip install -r requirements.txt"
   
-jobs: 
-  stage: test
+#jobs: 
+  #stage: test
     - script:
       - python test.py
 
-  stage: deploy
+ # stage: deploy
 
     - before_deploy:
           # Set up git user name and tag this commit
