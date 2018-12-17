@@ -3,11 +3,11 @@ language:
 
 python:
   - "2.7"
-  - "2.6"
+ # - "2.6"
 
 os: 
   - ubuntu
-  - centos
+ # - centos
   
 cache: pip
 install: "pip install -r requirements.txt"
