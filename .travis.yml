@@ -18,9 +18,7 @@ jobs:
   include: 
     - stage: test
       script: python test.py
-     
-
-   - stage: deploy
+    - stage: deploy
 
       before_deploy:
         - git config --local user.name "jbudzynski9"
