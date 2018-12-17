@@ -18,7 +18,7 @@ jobs:
     - stage: test
       script: python test.py
     - stage: deploy
-
+      script: skip
       before_deploy:
         - git config --local user.name "jbudzynski9"
         - git config --local user.email "jbudzynski95@gmail.com"
