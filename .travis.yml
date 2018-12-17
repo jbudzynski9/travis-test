@@ -16,7 +16,7 @@ jobs:
   include: 
     - stage: test
       script: python test.py
-      if: type = push || type = pull_request
+     # if: type = push || type = pull_request
     - stage: deploy
       script: skip
       before_deploy:
