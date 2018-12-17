@@ -1,31 +1,34 @@
-language: python
+language: 
+  python
 
 python:
   - "2.7"
-  - "2.6"
+#  - "2.6"
 
 os: 
   - ubuntu
-  - centos
+#  - centos
   
 cache: pip
-install: "pip install -r requirements.txt"
+
+install: 
+  "pip install -r requirements.txt"
   
 jobs: 
   stage: test
-    script:
+    - script:
       - python test.py
 
   stage: deploy
 
-    before_deploy:
+    - before_deploy:
           # Set up git user name and tag this commit
           - git config --local user.name "jbudzynski9"
           - git config --local user.email "jbudzynski95@gmail.com"
           - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
           - git tag -a $TRAVIS_TAG -m "new tag - $TRAVIS_TAG"
 
-    deploy:
+    - deploy:
       provider: releases
       api_key: "$travis"
       file: test.py
